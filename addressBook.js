@@ -147,3 +147,22 @@ class Contact{
     {
         console.error(e);
     }
+    let addressBook = new Array();
+
+function addContact(...params) {
+    try{
+    let newContact = new Contact(params[0],params[1],params[2],params[3],params[4],params[5],params[6],params[7]);
+    addressBook.push(newContact);
+    }catch(e){
+        console.error(e);
+    }
+    
+}
+
+addContact("\n Mohit","Rajput","4 Kuber Nagar","Pune","Maarashtra",4254089,9173410387,"Mohit03@yahoo.com");
+addContact("\n Riya","More","45 Bhoi Gully","Shahada","Maharashtra",4657653,8771979690,"Riya18@gmail.com");
+addContact("\n Pranali","Malviya","12 moshi, Dayton, Pune","Maharashtra","Ohio",453774,9999999999,"Purva@gmail.com");
+addContact("\n vRitik","Manglani","sindhi Colony","Nandurbar","UP",423306,2654421298,"Ritik10@gmail.com");
+addContact("\n Suhas","Chaudhari","1 Kashima Nivas","Ahemdabad","Gujrat",66121,7642215391,"Suhas45@gmail.com");
+console.log(addressBook.toString())
+
